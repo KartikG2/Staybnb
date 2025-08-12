@@ -88,7 +88,7 @@ app.use((req,res,next)=>{
 
 // ===================routes======================
 app.get("/", (req, res) => {
-  res.render("listings/index", { /* pass your listings data */ });
+  res.redirect("/listings");
 });
 
 app.use("/listings",listingRouter);
